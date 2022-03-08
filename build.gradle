@@ -1,0 +1,18 @@
+plugins {
+    id 'application'
+    id 'org.openjfx.javafxplugin' version '0.0.10'
+    id "com.dua3.javafxgradle7plugin" version "0.0.9"
+}
+
+group 'com.github.jonahbaayen'
+
+repositories {
+    mavenCentral()
+}
+
+mainClassName = "com.github.jonahbaayen.lab06.Lab06"
+
+javafx {
+    version = '17'
+    modules = ['javafx.controls', 'javafx.fxml']
+}
